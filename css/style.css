@@ -1,15 +1,101 @@
-.home-bg{
-    margin: 0;
-    border: 0;
+body{
+    margin: 0px;
+    font-family:avenir;
+    text-align: center;
 }
 
-#home-planes{
-    margin-bottom: 20px;
-    margin-left:0px;
-    border:0px;
-    height: 46vh;
+/* Home page css */
+#home-bg {
+    background-image: url('../assets/Layover-home.png');
+    background-color: #cccccc;
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+#enter-flight{
+    background:rgba(255,255,255, 0.96);
+    width: 62%;
+    height: 65%;
+    margin: auto;
+    top:17%;
+    position: relative;
+    border-radius: 10px;
 }
 
-#home-nyc{
-    height: 51.8vh;
+#home-title{
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
 }
+
+#layover-text-home{
+    color:#F09038;
+}
+
+#home-intro{
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+.enter-flight-text{
+    padding:0;
+    margin:0;
+    text-align: left;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 4%;
+    font-size: 20px;
+}
+
+.arrival{
+    padding:0;
+    margin:0;
+    margin-bottom: 3vh;
+}
+.departure{
+    padding:0;
+    margin-top:5vh;
+    margin-bottom: 3vh;
+}
+
+
+.line{
+    display:flex;
+}
+input[type=text] {
+    background-color:#E3E3E3;
+    border: 0px;
+    height: 3.9vh;
+    border-radius: 5px;
+    /* width:200px; */
+    flex-grow:100;
+    font-family:avenir;
+}
+input[type=date] {
+    background-color:#E3E3E3;
+    border: 0px;
+    height: 3.9vh;
+    border-radius: 5px;
+    font-family:avenir;
+    text-align:right;
+    flex-grow:100;
+}
+input[type=submit]{
+    background-color:#455EA0;
+    border: 0px;
+    height: 4vh;
+    float:right; 
+    border-radius: 5px;
+    width:165px;
+    color:white;
+    font-size: 18px;
+    margin-top:5vh;
+}
+
+
+/* @media only screen min 600px show or hide */

@@ -7,11 +7,40 @@
     </head>
 
     <body>
-        <img src="assets/planes.png" alt="background picture" class="home-bg" id="home-planes"/>
-        <div id="flight-info">
-            
+        <div id="home-bg">
+            <div id="enter-flight">
+                <div id="home-title">
+                    Plan Your <span id="layover-text-home">Layover</span> 
+                </div>
+                <p id="home-intro">Let us take you out for a spin, and start your perfect trip from now!</p>
+                <div class="enter-flight-text">
+                    <form action="/action_page.php">
+                        <div class="line">
+                            <label for="flight-num" class="arrival">Enter your arrival flight number:&nbsp;</label>
+                            <input type="text" class="arrival" name="arrival"><br>
+                        </div>
+                        
+                        <div class="line">
+                            <label for="arrival-date">Select arrival date:&nbsp;</label>
+                            <input type="date" id="arrival-date" name="arrival-date"><br>
+                        </div>
+                        
+                        <div class="line">
+                            <label for="flight-num1" class="departure">Enter your departure flight number:&nbsp;</label>
+                            <input type="text" class="departure" name="departure"><br>
+                        </div>
+                        
+                        <div class="line">
+                            <label for="departure-date">Select departure date:&nbsp;</label>
+                            <input type="date" id="departure-date" name="departure-date"><br>
+                        </div>
+                        
+
+                        <input type="submit" value="Search for a Plan">
+                    </form>
+                </div>
+            </div>
         </div>
-        <img src="assets/nyc-home.png" alt="background picture" class="home-bg" id="home-nyc"/>
     </body>
 
 </html>
