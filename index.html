@@ -14,7 +14,7 @@
                 </div>
                 <p id="home-intro">Let us take you out for a spin, and start your perfect trip from now!</p>
                 <div class="enter-flight-text">
-                    <form action="/action_page.php">
+                    <form target="_blank" method="POST" action="/packages.html">
                         <div class="line">
                             <label for="flight-num" class="arrival">Enter your arrival flight number:&nbsp;</label>
                             <input type="text" class="arrival" name="arrival"><br>
@@ -34,10 +34,10 @@
                             <label for="departure-date">Select departure date:&nbsp;</label>
                             <input type="date" id="departure-date" name="departure-date"><br>
                         </div>
-                        
+                    </form>    
 
-                        <input type="submit" value="Search for a Plan">
-                    </form>
+                        <button onclick="document.location = 'packages.html'" id="home-submit">Search for a Plan</button>
+                    
                 </div>
             </div>
         </div>
