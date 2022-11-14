@@ -8,11 +8,10 @@ body{
 #home-bg {
     background-image: url('../assets/Layover-home.png');
     background-color: #cccccc;
-    height: 850px;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
   }
 
 #enter-flight{
@@ -98,136 +97,68 @@ input[type=date] {
     /* drop-shadow(offset-x offset-y blur-radius color) */
 }
 
+@media only screen and (max-width: 1000px) {
+    #home-title{
+        font-size: 73px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 60px;
+    }
 
-/* Package page CSS*/
-.logo{
-    text-align:left;
-    font-size:29px;
-    font-weight: bold;
-    padding: 7px;
-}
+    #home-intro{
+        font-size: 30px;
+        margin: 10px 25px 40px 25px;
+    }
 
-.packages-bg {
-    background-image: url('../assets/nyc-home.png');
-    background-color: #cccccc;
-    /* filter: brightness(80%); */
-    /* filter: blur(2px);
-    -webkit-filter: blur(2px); */
-    height: 1800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    .arrival{
+        width: 100%;
+    }
+    .departure{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .line{
+        display: block;
+        font-size: 30px;
+    }
+    .select-date{
+        width: 100%;
+    }
+    input[type=text] {
+        background-color:#E3E3E3;
+        border: 0px;
+        height: 50px;
+        border-radius: 5px;
+        flex-grow:100;
+        font-size: 25px;
+        font-family:avenir;
+    }
+    input[type=date] {
+        background-color:#E3E3E3;
+        border: 0px;
+        height: 50px;
+        border-radius: 5px;
+        font-family:avenir;
+        font-size: 25px;
+        text-align:right;
+        flex-grow:100;
+        margin-bottom: 40px;
+    }
+    .enter-flight-text{
+        padding:0;
+        margin:0;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 4%;
+        font-size: 20px;
+    }
+
+    #home-submit{
+        height: 50px;
+        width:250px;
+        font-size: 25px;
+        margin-top: 30px;
+    }
   }
-
-/* .blur{
-    background: rgba(255, 255, 255, 0.01); 
-    backdrop-filter: blur(3px); 
-    height: 100vh;
-    width: 50%;
-} */
-#pa-page-title{
-    color:white;
-    text-align:left;
-    text-align:bottom;
-    margin-left:15%;
-    padding-top: 8.5vh;
-    font-size: 45px;
-    font-weight: bold;
-}
-#pa-page-intro{
-    color:white;
-    text-align:left;
-    margin-left:15%;
-    font-size: 25px;
-    padding-bottom: 5vh;
-}
-
-.packages{
-    display:flex;
-    flex-direction:column;
-    background:rgba(217,217,217, 0.45);
-    width: 70%;
-    height: 82%;
-    margin: auto;
-    position: relative;
-    border-radius: 10px;
-    padding-left:5%;
-    padding-right:5%;
-}
-
-.package-card{
-    padding-top:2%;
-    width:100%;
-}
-
-.package-title{
-    color:white;
-    text-align:left;
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom:2%;
-}
-
-.package-info{
-    list-style-type:disk;
-    text-align:left;
-    background:white;
-    border-radius: 10px;
-    padding: 3%;
-    font-size: 20px;
-    display:flex;
-    flex-direction:row;
-    margin-bottom:20px;
-}
-
-.view-details{
-    background-color:#ED7507;
-    color:white;
-    border: 0px;
-    height: 42px;
-    float:right; 
-    border-radius: 5px;
-    font-size: 25px;
-    width: 100px;
-}
-
-.trip-content{
-    flex-grow: 4;
-}
-
-.package-map{
-    background-color:#cccccc;
-    border-radius: 10px;
-    height: 300px;
-    text-align: left;
-    margin-bottom:20px;
-}
-
-.book-button{
-    background-color:#455EA0;
-    color:white;
-    border: 0px;
-    height: 42px;
-    float:right; 
-    border-radius: 5px;
-    font-size: 25px;
-    width: 200px;
-}
-
-.trip-details-text{
-    margin-top:20px;
-}
-
-.package-info-details{
-    list-style-type:disk;
-    text-align:left;
-    background:white;
-    border-radius: 10px;
-    padding: 3%;
-    font-size: 20px;
-    display:flex;
-    flex-direction:row;
-    margin-bottom:20px;
-    margin-top:25px;
-}
