@@ -5,6 +5,7 @@ body{
 }
 
 /* Home page css */
+
 #home-bg {
     background-image: url('../assets/Layover-home.png');
     background-color: #cccccc;
@@ -141,7 +142,6 @@ input[type=date] {
         border-radius: 5px;
         font-family:avenir;
         font-size: 25px;
-        text-align:right;
         flex-grow:100;
         margin-bottom: 40px;
     }
@@ -160,5 +160,51 @@ input[type=date] {
         width:250px;
         font-size: 25px;
         margin-top: 30px;
+    }
+  }
+
+
+  #confirm-bg{
+    background-image: url('../assets/V2-pay.png');
+    background-color: #cccccc;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #confirm-box{
+    background:rgba(255,255,255, 0.96);
+    width: 53%;
+    height: 45%;
+    margin: auto;
+    top:25%;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .thx-message{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding: 70px 40px 0px 40px;
+  }
+
+  #booked{
+    font-size: 27px;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 9%;
+  }
+
+  .confirm-trip-name{
+    font-weight: bold;
+    color:#F09038;
+  }
+
+  @media only screen and (max-width: 1000px){
+    #confirm-box{
+        height: 25%;
+        width: 55%;
     }
   }
