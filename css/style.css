@@ -78,6 +78,7 @@ input[type=text] {
 }
 input[type=date] {
     background-color:#E3E3E3;
+    color:#838383;
     border: 0px;
     height: 30px;
     border-radius: 5px;
@@ -207,4 +208,9 @@ input[type=date] {
         height: 25%;
         width: 55%;
     }
+  }
+
+/* map related css */
+  #map {
+    height: 100%;
   }

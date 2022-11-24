@@ -5,6 +5,9 @@
         <title>Plan Your Layover</title>
         <link rel="stylesheet" href = "css/style.css"/>
         <link rel="stylesheet" href = "css/packages.css"/>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="js/map.js"></script>
     </head>
 
     <body>
@@ -38,7 +41,10 @@
                         <button onclick="document.location = 'details.html'" class="view-details">Details</button>    
                     </div>
                     <div class="package-map">
-                        A placeholder for map.
+                        <div id="map"></div>
+                            <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                        defer></script>
                     </div>
                     <button onclick="document.location = 'confirm.html'" class="book-button">Book the Trip!</button>
                 </div>
@@ -61,7 +67,10 @@
                         <button onclick="document.location = 'details.html'" class="view-details">Details</button>    
                     </div>
                     <div class="package-map">
-                        A placeholder for map.
+                        <!-- <div id="map"></div>
+                        <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                        defer></script> -->
                     </div>
                     <button onclick="document.location = 'confirm.html'" class="book-button">Book the Trip!</button>
                 </div>
