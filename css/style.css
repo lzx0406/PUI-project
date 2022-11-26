@@ -209,8 +209,3 @@ input[type=date] {
         width: 55%;
     }
   }
-
-/* map related css */
-  #map {
-    height: 100%;
-  }
