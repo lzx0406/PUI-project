@@ -4,6 +4,8 @@
     <head>
         <title>Plan Your Layover</title>
         <link rel="stylesheet" href = "css/style.css"/>
+        <script defer src="js/packagesData.js"></script>
+        <script defer src="js/script.js"></script>
     </head>
 
     <body>
@@ -15,10 +17,10 @@
                 </div>
                 <p id="home-intro">Let us take you out for a spin, and start your perfect trip from now!</p>
                 <div class="enter-flight-text">
-                    <form target="_blank" method="POST" action="/packages.html">
+                    <form target="_blank" method="GET" action="/packages.html">
                         <div class="line">
                             <label for="flight-num" class="arrival">Enter your arrival flight number:&nbsp;</label>
-                            <input type="text" class="arrival" name="arrival" placeholder="&nbsp;&nbsp;Enter AA6555 to test!"><br>
+                            <input type="text" class="arrival" id="arrival-text" name="arrival" placeholder="&nbsp;&nbsp;Enter AA6555/AA44 to test!"><br>
                         </div>
                         
                         <div class="line">
@@ -28,7 +30,7 @@
                         
                         <div class="line">
                             <label for="flight-num1" class="departure">Enter your departure flight number:&nbsp;</label>
-                            <input type="text" class="departure" name="departure" placeholder="&nbsp;&nbsp;Enter AA6961 to test!"><br>
+                            <input type="text" class="departure" id="departure-text" name="departure" placeholder="&nbsp;&nbsp;Enter AA6961 to test!"><br>
                         </div>
                         
                         <div class="line">
@@ -37,7 +39,7 @@
                         </div>
                     </form>    
 
-                        <button onclick="document.location = 'packages.html'" id="home-submit">Search for a Plan</button>
+                        <button onclick="validateArrival()" id="home-submit">Search for a Plan</button>
                     
                 </div>
             </div>

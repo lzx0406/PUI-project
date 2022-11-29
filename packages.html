@@ -6,8 +6,13 @@
         <link rel="stylesheet" href = "css/style.css"/>
         <link rel="stylesheet" href = "css/packages.css"/>
 
+        <script defer src="js/packagesData.js"></script>
+        <script defer src="js/script.js"></script>
+
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <script type="module" src="js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                        defer></script>            
     </head>
 
     <body>
@@ -23,13 +28,13 @@
             </div>
 
             <div class="packages">
-                <div class="package-card">
+                <div class="package-card" id="card1">
                     <div class="package-title">
                         5 hour city trip
                     </div>
                     <div class="package-info">
                         <div class="trip-content">
-                            A trip to JFK to:
+                            A trip from JFK to:
                             <ul>
                                 <li>Resorts World</li>
                                 <li>Sunset Park</li>
@@ -38,42 +43,93 @@
                             </ul>
                             Join now to enjoy the best of Brooklyn and Queens with GIGI! 
                         </div>
-                        <button onclick="document.location = 'details.html'" class="view-details">Details</button>    
+                        <button onclick="document.location = 'details.html?package=5h'" class="view-details">Details</button>    
                     </div>
                     <div class="package-map">
                         <div id="map"></div>
-                            <script
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
-                        defer></script>
                     </div>
-                    <button onclick="document.location = 'confirm.html'" class="book-button">Book the Trip!</button>
+                    <button onclick="document.location = 'confirm.html?package=5h'" class="book-button">Book the Trip!</button>
                 </div>
 
-                <div class="package-card">
+                <div class="package-card" id="card2">
                     <div class="package-title">
                         7 hour getaway trip
                     </div>
                     <div class="package-info">
                         <div class="trip-content">
-                            A trip to JFK to:
+                            A trip from JFK to:
                             <ul>
                                 <li>Resorts World</li>
                                 <li>Sunset Park</li>
+                                <li>Central Park</li>
                                 <li>Queens Botanical Garden</li>
                                 <li>UBS Arena</li>
                             </ul>
                             Join now to enjoy the best of Brooklyn and Queens with GIGI!
                         </div>
-                        <button onclick="document.location = 'details.html'" class="view-details">Details</button>    
+                        <button onclick="document.location = 'details.html?package=7h'" class="view-details">Details</button>    
                     </div>
                     <div class="package-map">
-                        <!-- <div id="map"></div>
-                        <script
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
-                        defer></script> -->
+                        <div id="map1"></div>
                     </div>
-                    <button onclick="document.location = 'confirm.html'" class="book-button">Book the Trip!</button>
+                    <button onclick="document.location = 'confirm.html?package=7h'" class="book-button">Book the Trip!</button>
                 </div>
+
+
+                <div class="hidden">
+                    <div class="package-card" id="card1-change">
+                        <div class="package-title">
+                            3 hour quick glimps
+                        </div>
+                        <div class="package-info">
+                            <div class="trip-content">
+                                A trip from JFK to:
+                                <ul>
+                                    <li>Resorts World</li>
+                                    <li>Sunset Park</li>
+                                    <li>Queens Botanical Garden</li>
+                                    <li>UBS Arena</li>
+                                </ul>
+                                Join now to enjoy the best of Brooklyn and Queens with GIGI! 
+                            </div>
+                            <button onclick="document.location = 'details.html?package=3h'" class="view-details">Details</button>    
+                        </div>
+                        <div class="package-map">
+                            <!-- <div id="map"></div>
+                                <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                            defer></script> -->
+                        </div>
+                        <button onclick="document.location = 'confirm.html?package=3h'" class="book-button">Book the Trip!</button>
+                    </div>
+            
+                    <div class="package-card" id="card2-change">
+                        <div class="package-title">
+                            4 hour fun taste
+                        </div>
+                        <div class="package-info">
+                            <div class="trip-content">
+                                A trip from JFK to:
+                                <ul>
+                                    <li>Resorts World</li>
+                                    <li>Sunset Park</li>
+                                    <li>Queens Botanical Garden</li>
+                                    <li>UBS Arena</li>
+                                </ul>
+                                Join now to enjoy the best of Brooklyn and Queens with GIGI! 
+                            </div>
+                            <button onclick="document.location = 'details.html?package=4h'" class="view-details">Details</button>    
+                        </div>
+                        <div class="package-map">
+                            <!-- <div id="map"></div>
+                                <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                            defer></script> -->
+                        </div>
+                        <button onclick="document.location = 'confirm.html?package=4h'" class="book-button">Book the Trip!</button>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
