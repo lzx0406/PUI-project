@@ -4,10 +4,9 @@ function validateArrival(){
     localStorage.setItem('flight', flightNum.value);
     console.log(flightNum.value);
     if(flightNum.value == "AA6555"){
-        document.location = 'packages.html';
+        document.location = 'packages.html?flight=AA6555';
     } else if (flightNum.value == "AA44"){
-        document.location = 'packages.html';
-        let card1 = document.getElementById("card1");
+        document.location = 'packages.html?flight=AA44';
     } else {
         alert("Please enter the AA6555 or AA44 for arrival flight!");
     }
@@ -30,11 +29,27 @@ if(window.location.pathname == '/packages.html'){
 }
 
 
-// Populating detail page with package selected
+// Get the query string for each page
 const queryString = window.location.search;
 console.log(queryString);
 const params = new URLSearchParams(queryString);
 console.log(params);
-let packageType = params.get('package');
-console.log(packageType);
+let packageType, flightQ;
 
+if (params.get('package') != null){
+    packageType = params.get('package');
+    console.log(packageType);
+}
+if (params.get('flight') != null){
+    flightQ = params.get('flight');
+    console.log(flightQ); //as in flight query
+}
+
+
+// Confirm page flight number
+if (document.getElementById("confirm-trip-name") != null) {
+    let confirmP = document.getElementById("confirm-trip-name");
+    console.log(packageType);
+    console.log(packages[packageType]);
+    confirmP.innerText = packages[packageType].name;
+}

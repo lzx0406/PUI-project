@@ -8,6 +8,11 @@
 
         <script defer src="js/packagesData.js"></script>
         <script defer src="js/script.js"></script>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
+                        defer></script>  
     </head>
 
     <body>
@@ -40,25 +45,22 @@
                 </div>
 
                 <div class="package-info">
-                    <div>
+                    <div id="site-intro">
                         Queens Botanical Garden
                         
                     </div>
 
-                    <div>
+                    <div id="site-img">
                         image of Garden
                     </div>
                     
                 </div>
 
                 <div class="package-map">
-                    <div class="map"></div>
-                    <script
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8SAfMCNO2FiOIBi8Gc3MKklSX11wps8&callback=initMap&v=weekly"
-                    defer></script>
+                    <div id="mapD"></div>
                 </div>
 
-                <button onclick="document.location = 'confirm.html'" class="book-button" style="margin-left:70%;">Book the Trip!</button>
+                <button onclick="document.location = `confirm.html?package=${packageType}`" class="book-button" style="margin-left:70%;">Book the Trip!</button>
 
             </div>
 
