@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow:auto;
   }
 
 #pa-page-title{
@@ -38,7 +39,8 @@
     flex-direction:column;
     background:rgba(217,217,217, 0.45);
     width: 70%;
-    height: 78%;
+    overflow:auto; 
+    padding-bottom: 40px;
     margin: auto;
     position: relative;
     border-radius: 10px;
@@ -125,7 +127,29 @@
 
 #site-img{
     height: 200px;
-    width: 250px;
+    width: 270px;
+    border-radius: 12px;
+}
+#site-img1{
+    height: 200px;
+    width: 270px;
+    border-radius: 12px;
+}
+
+#site-intro{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size:22px;
+}
+
+#site-intro-detail{
+    padding-right: 30px;
+}
+
+#detail-reminder{
+    font-size:15px;
+    margin-top:15px;
+    color:#ED7507;
 }
 
 @media only screen and (max-width: 1000px){

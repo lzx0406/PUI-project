@@ -11,7 +11,7 @@ const ubs = { lat:  40.71200152293058, lng: -73.72599688697093};
 function mkjfk(mapNum){
   return (new google.maps.Marker({
     position: jfk,
-    label: "0",
+    label: "Start",
     map: mapNum,
   }));
 }
@@ -48,26 +48,32 @@ function mkubs(mapNum){
 
 
 const site = document.getElementById("site-intro");
+const siteText = document.getElementById("site-intro-detail");
 const siteImg = document.getElementById("site-img");
 function resortDetail(){
   site.innerText = "Resort World";
   siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
+  siteText.innerText = resortD;
 }
 function sunsetDetail(){
   site.innerText = "Sunset Park";
-  siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
+  siteImg.innerHTML = "<img id='site-img' src='assets/sunset.jpeg' alt='Sunset Park'>";
+  siteText.innerText = sunsetD;
 }
 function centralDetail(){
   site.innerText = "Central Park";
-  siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
+  siteImg.innerHTML = "<img id='site-img' src='assets/central.jpeg' alt='Central Park'>";
+  siteText.innerText = centralD;
 }
 function queensDetail(){
   site.innerText = "Queens Botanical Garden";
-  siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
+  siteImg.innerHTML = "<img id='site-img' src='assets/queens1.png' alt='Queens Botanical Garden'>";
+  siteText.innerText = queensD;
 }
 function ubsDetail(){
   site.innerText = "UBS Arena";
-  siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
+  siteImg.innerHTML = "<img id='site-img' src='assets/ubs.jpeg' alt='UBS Arena'>";
+  siteText.innerText = ubsD;
 }
 
 
