@@ -46,6 +46,7 @@
     border-radius: 10px;
     padding-left:5%;
     padding-right:5%;
+    overflow:scroll;
 }
 
 .package-card{
@@ -119,10 +120,21 @@
     border-radius: 10px;
     padding: 3%;
     font-size: 20px;
+    margin-bottom:20px;
+    margin-top:30px;
+}
+
+.package-info-details-1{
+    text-align:left;
+    background:white;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 17px;
     display:flex;
+    align-items: center;
+    justify-content: center;
     flex-direction:row;
     margin-bottom:20px;
-    margin-top:25px;
 }
 
 #site-img{
@@ -153,6 +165,9 @@
 }
 
 @media only screen and (max-width: 1000px){
+    .packages-bg{
+        height: 2200px;
+    }
     .packages{
         font-size:26px;
     }
@@ -163,9 +178,6 @@
     .trip-details-text{
         font-size:26px;
     }
-    .packages{
-        height:83%;
-    }
 
     .view-details{
         border: 0px;
@@ -174,6 +186,29 @@
         border-radius: 5px;
         font-size: 27px;
         width: 100px;
+    }
+
+    #site-img{
+        height: 220px;
+        width: 250px;
+        border-radius: 12px;
+    }
+    #site-img1{
+        height: 220px;
+        width: 250px;
+        border-radius: 12px;
+    }
+
+    .package-map{
+        overflow:visible;
+        border-radius: 10px;
+        height: 300px;
+        margin-bottom:20px;
+    }
+
+    #mapD{
+        overflow:visible;
+        height: 300px;
     }
 
     .book-button{

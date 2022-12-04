@@ -193,14 +193,13 @@ input[type=date] {
 
   #booked{
     font-size: 27px;
-    text-align: left;
     padding-top: 50px;
-    padding-left: 9%;
   }
 
   #confirm-trip-name{
     font-weight: bold;
     color:#F09038;
+    margin-top: 0px;
   }
 
   @media only screen and (max-width: 1000px){
