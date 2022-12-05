@@ -7,7 +7,7 @@
 }
 
 .packages-bg {
-    background-image: url('../assets/nyc-home.png');
+    background-image: url('../assets/nyc-dark.png');
     background-color: #cccccc;
     height: 2000px;
     background-position: center;
@@ -75,7 +75,7 @@
 }
 
 .view-details{
-    background-color:#ED7507;
+    background-color:#5E4824;
     color:white;
     border: 0px;
     height: 42px;
