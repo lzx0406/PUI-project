@@ -177,23 +177,7 @@ function initMap() {
     if(marker5 != null) { google.maps.event.addListener(marker5, "click", centralDetail); }
   }
     
-
 }
 
-// marker.addListener("click", toggleBounce);
-// function toggleBounce() {
-      //   if (marker.getAnimation() !== null) {
-      //     marker.setAnimation(null);
-      //   } else {
-      //     marker.setAnimation(google.maps.Animation.BOUNCE);
-      //   }
-      // }
-
-
-// if (document.getElementById("map") != null) {
-//   window.initMap = initMap;
-// } else if (document.getElementById("map1") != null){
-//   // window.initMap1 = initMap1;
-// }
 window.initMap = initMap;
 

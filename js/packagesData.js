@@ -2,8 +2,6 @@ const packages = {
     "5h":{
         "name": "5 hour city trip",
         "price": 137,
-        "home-description": "",
-        "detail-description": ""
     },
     "7h":{
         "name": "7 hour getaway trip",
