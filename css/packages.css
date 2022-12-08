@@ -3,12 +3,12 @@ body{
     --zoomSize: 11;
 }
 
-.logo-confirm{
+.logo-pack{
     text-align:left;
     font-size:25px;
     font-weight: bold;
     padding: 7px;
-    color:black;
+    color:white;
 }
 
 .packages-bg {
@@ -165,7 +165,7 @@ body{
 #detail-reminder{
     font-size:15px;
     margin-top:15px;
-    color:#ED7507;
+    color:#5E4824;
 }
 
 @media only screen and (max-width: 1000px){
