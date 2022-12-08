@@ -9,6 +9,7 @@ body{
     font-weight: bold;
     padding: 7px;
     color:white;
+    background:#1D2123;
 }
 
 .packages-bg {
@@ -24,6 +25,7 @@ body{
 
 #pa-page-title{
     color:white;
+    background:#1D2123;
     text-align:left;
     text-align:bottom;
     margin-left:15%;
