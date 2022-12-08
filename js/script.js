@@ -13,7 +13,7 @@ function validateArrival(){
 }
 
 // Populating the packages page with flight info from home page
-if(window.location.pathname == '/packages.html'){
+if(window.location.pathname.endsWith('/packages.html')){
     let flightJSON = localStorage.getItem('flight');
     console.log(flightJSON);
     let card1 = document.getElementById("card1");
