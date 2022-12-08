@@ -4,6 +4,14 @@ body{
     text-align: center;
 }
 
+.logo{
+    text-align:left;
+    font-size:25px;
+    font-weight: bold;
+    padding: 7px;
+    color:white;
+}
+
 /* Home page css */
 
 #home-bg {
@@ -20,16 +28,17 @@ body{
     width: 62%;
     height: 65%;
     margin: auto;
-    top:17%;
+    top:14%;
     position: relative;
     border-radius: 10px;
 }
 
 #home-title{
-    font-size: 58px;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 50px;
+    margin-bottom: 0px;
 }
 
 #layover-text-home{
@@ -55,12 +64,12 @@ body{
 .arrival{
     padding:0;
     margin:0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 .departure{
     padding:0;
-    margin-top:50px;
-    margin-bottom: 28px;
+    margin-top:40px;
+    margin-bottom: 20px;
 }
 
 
@@ -72,7 +81,6 @@ input[type=text] {
     border: 0px;
     height: 30px;
     border-radius: 5px;
-    /* width:200px; */
     flex-grow:100;
     font-family:avenir;
 }
@@ -96,7 +104,6 @@ input[type=date] {
     color:white;
     font-size: 18px;
     margin-top:35px;
-    /* drop-shadow(offset-x offset-y blur-radius color) */
 }
 
 @media only screen and (max-width: 1000px) {

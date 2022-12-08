@@ -1,15 +1,20 @@
 /* Package page CSS*/
-.logo{
+body{
+    --zoomSize: 11;
+}
+
+.logo-confirm{
     text-align:left;
-    font-size:29px;
+    font-size:25px;
     font-weight: bold;
     padding: 7px;
+    color:black;
 }
 
 .packages-bg {
     background-image: url('../assets/nyc-dark.png');
     background-color: #cccccc;
-    height: 2000px;
+    overflow:auto; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,12 +45,11 @@
     background:rgba(217,217,217, 0.45);
     width: 70%;
     overflow:auto; 
-    padding-bottom: 40px;
     margin: auto;
     position: relative;
     border-radius: 10px;
-    padding-left:5%;
-    padding-right:5%;
+    padding:0 5% 40px 5%;
+    margin-bottom: 7%;
     overflow:scroll;
 }
 
@@ -165,6 +169,9 @@
 }
 
 @media only screen and (max-width: 1000px){
+    body{
+        --zoomSize: 10.5;
+    }
     .packages-bg{
         height: 2200px;
     }

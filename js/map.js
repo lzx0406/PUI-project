@@ -1,6 +1,19 @@
 let map, map1, map2, map3;
 let mapD;
+let zoomSize = 11;
 
+// change zoom in for map based on window size of browser
+window.addEventListener("resize", changeZoom);
+zoomSize = window.getComputedStyle(document.querySelector('body')).getPropertyValue('--zoomSize');
+zoomSize = parseFloat(zoomSize);
+
+function changeZoom(){
+  zoomSize = window.getComputedStyle(document.querySelector('body')).getPropertyValue('--zoomSize');
+  zoomSize = parseFloat(zoomSize);
+  initMap();
+}
+
+// Initialize all the coordinates of sites
 const jfk = { lat: 40.642353347664, lng: -73.77842756514062 };
 const resort = { lat: 40.67329133426266, lng: -73.83258451580777};
 const sunset = { lat: 40.653085813847326, lng: -74.00898778788401};
@@ -8,10 +21,10 @@ const central = { lat: 40.78279839307527, lng: -73.96559413136623};
 const queens = { lat:  40.75117784213068, lng: -73.82615147864537};
 const ubs = { lat:  40.71200152293058, lng: -73.72599688697093};
 
+// Create functions to simplify the making marker process
 function mkjfk(mapNum){
   return (new google.maps.Marker({
     position: jfk,
-    label: "Start",
     map: mapNum,
   }));
 }
@@ -47,6 +60,7 @@ function mkubs(mapNum){
 }
 
 
+// Initialize all the information for detials of each place
 const site = document.getElementById("site-intro");
 const siteText = document.getElementById("site-intro-detail");
 const siteImg = document.getElementById("site-img");
@@ -77,12 +91,13 @@ function ubsDetail(){
 }
 
 
+// Initialize map in packages and details page
 function initMap() {
   //init the first map for 5 hour city trip
   if (document.getElementById("map") != null){
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 40.702353347664, lng: -73.83842756514062 },
-      zoom: 11,
+      zoom: zoomSize,
     });
 
     const marker = mkjfk(map);
@@ -96,7 +111,7 @@ function initMap() {
   if (document.getElementById("map1") != null){
     map1 = new google.maps.Map(document.getElementById("map1"), {
       center:  { lat: 40.732353347664, lng: -73.83842756514062 },
-      zoom: 11,
+      zoom: zoomSize,
     });
 
     const marker = mkjfk(map1);
@@ -111,7 +126,7 @@ function initMap() {
   if (document.getElementById("map2") != null){
     map1 = new google.maps.Map(document.getElementById("map2"), {
       center:  { lat: 40.682353347664, lng: -73.83842756514062 },
-      zoom: 11,
+      zoom: zoomSize,
     });
 
     const marker = mkjfk(map1);
@@ -123,7 +138,7 @@ function initMap() {
   if (document.getElementById("map3") != null){
     map1 = new google.maps.Map(document.getElementById("map3"), {
       center:  { lat: 40.682353347664, lng: -73.83842756514062 },
-      zoom: 11,
+      zoom: zoomSize,
     });
 
     const marker = mkjfk(map1);
@@ -137,7 +152,7 @@ function initMap() {
     let marker, marker1, marker2, marker3, marker4, marker5;
     mapD = new google.maps.Map(document.getElementById("mapD"), {
       center:  { lat: 40.732353347664, lng: -73.83842756514062 },
-      zoom: 11,
+      zoom: zoomSize,
     });
 
     if(packageType == "5h"){
@@ -180,4 +195,3 @@ function initMap() {
 }
 
 window.initMap = initMap;
-
