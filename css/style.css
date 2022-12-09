@@ -1,3 +1,4 @@
+/* Some global settings */
 body{
     margin: 0px;
     font-family:avenir;
@@ -13,7 +14,6 @@ body{
 }
 
 /* Home page css */
-
 #home-bg {
     background-image: url('../assets/Layover-home.png');
     background-color: #cccccc;
@@ -21,7 +21,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 #enter-flight{
     background:rgba(255,255,255, 0.96);
@@ -51,6 +51,7 @@ body{
     text-align: center;
 }
 
+/* CSS for the text entry boxes and their labels */
 .enter-flight-text{
     padding:0;
     margin:0;
@@ -66,16 +67,17 @@ body{
     margin:0;
     margin-bottom: 20px;
 }
+
 .departure{
     padding:0;
     margin-top:40px;
     margin-bottom: 20px;
 }
 
-
 .line{
     display:flex;
 }
+
 input[type=text] {
     background-color:#E3E3E3;
     border: 0px;
@@ -84,6 +86,7 @@ input[type=text] {
     flex-grow:100;
     font-family:avenir;
 }
+
 input[type=date] {
     background-color:#E3E3E3;
     color:#838383;
@@ -94,6 +97,7 @@ input[type=date] {
     text-align:right;
     flex-grow:100;
 }
+
 #home-submit{
     background-color:#455EA0;
     border: 0px;
@@ -106,6 +110,7 @@ input[type=date] {
     margin-top:35px;
 }
 
+/* Media query for home page displays */
 @media only screen and (max-width: 1000px) {
     #home-title{
         font-size: 73px;
@@ -122,30 +127,31 @@ input[type=date] {
     .arrival{
         width: 100%;
     }
+
     .departure{
         width: 100%;
         margin-top: 0;
         margin-bottom: 20px;
     }
+
     .line{
         display: block;
         font-size: 30px;
     }
+
     .select-date{
         width: 100%;
     }
+
     input[type=text] {
-        background-color:#E3E3E3;
-        border: 0px;
         height: 50px;
         border-radius: 5px;
         flex-grow:100;
         font-size: 25px;
         font-family:avenir;
     }
+
     input[type=date] {
-        background-color:#E3E3E3;
-        border: 0px;
         height: 50px;
         border-radius: 5px;
         font-family:avenir;
@@ -153,6 +159,7 @@ input[type=date] {
         flex-grow:100;
         margin-bottom: 40px;
     }
+
     .enter-flight-text{
         padding:0;
         margin:0;
@@ -169,19 +176,20 @@ input[type=date] {
         font-size: 25px;
         margin-top: 30px;
     }
-  }
+}
 
 
-  #confirm-bg{
+/* CSS for the confirmation page */
+#confirm-bg{
     background-image: url('../assets/V2-pay.png');
     background-color: #cccccc;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
-  #confirm-box{
+#confirm-box{
     background:rgba(255,255,255, 0.96);
     width: 53%;
     height: 45%;
@@ -189,33 +197,30 @@ input[type=date] {
     top:25%;
     position: relative;
     border-radius: 10px;
-  }
+}
 
-  .thx-message{
+.thx-message{
     font-size: 34px;
     font-weight: bold;
     text-align: center;
     padding: 70px 40px 0px 40px;
-  }
+}
 
-  #booked{
+#booked{
     font-size: 27px;
     padding-top: 50px;
-  }
+}
 
-  #confirm-trip-name{
+#confirm-trip-name{
     font-weight: bold;
     color:#F09038;
     margin-top: 0px;
-  }
+}
 
-  @media only screen and (max-width: 1000px){
+/* Media query for the confirmation page */
+@media only screen and (max-width: 1000px){
     #confirm-box{
         height: 25%;
         width: 55%;
     }
-  }
-
-.hidden {
-display: none;
 }

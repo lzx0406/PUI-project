@@ -1,3 +1,4 @@
+// Initialize some global map variables
 let map, map1, map2, map3;
 let mapD;
 let zoomSize = 11;
@@ -13,7 +14,7 @@ function changeZoom(){
   initMap();
 }
 
-// Initialize all the coordinates of sites
+// Initialize all the coordinates of locations
 const jfk = { lat: 40.642353347664, lng: -73.77842756514062 };
 const resort = { lat: 40.67329133426266, lng: -73.83258451580777};
 const sunset = { lat: 40.653085813847326, lng: -74.00898778788401};
@@ -64,6 +65,8 @@ function mkubs(mapNum){
 const site = document.getElementById("site-intro");
 const siteText = document.getElementById("site-intro-detail");
 const siteImg = document.getElementById("site-img");
+
+// Call back function when user click on the markers on details page
 function resortDetail(){
   site.innerText = "Resort World";
   siteImg.innerHTML = "<img id='site-img' src='assets/resort.jpeg' alt='Resort World'>";
@@ -185,7 +188,8 @@ function initMap() {
       marker4 = mkubs(mapD);
     }
 
-    if(marker1 != null) {google.maps.event.addListener(marker1, "click", resortDetail)};  
+    // Add on-click events for markers on the detail page, and call the revise detail content function when clicked
+    if(marker1 != null) { google.maps.event.addListener(marker1, "click", resortDetail) };  
     if(marker2 != null) { google.maps.event.addListener(marker2, "click", sunsetDetail); }
     if(marker3 != null) { google.maps.event.addListener(marker3, "click", queensDetail); }
     if(marker4 != null) { google.maps.event.addListener(marker4, "click", ubsDetail); }

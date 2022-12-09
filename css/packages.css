@@ -1,6 +1,7 @@
-/* Package page CSS*/
+/* Package and detail page CSS (many of the classes are the same) */
 body{
-    --zoomSize: 11;
+    /* The zoom size for >1000 screen size map zoom in size */
+    --zoomSize: 11; 
 }
 
 .logo-pack{
@@ -21,7 +22,7 @@ body{
     background-size: cover;
     position: relative;
     overflow:auto;
-  }
+}
 
 #pa-page-title{
     color:white;
@@ -33,6 +34,7 @@ body{
     font-size: 45px;
     font-weight: bold;
 }
+
 #pa-page-intro{
     color:white;
     background:#1D2123;;
@@ -54,6 +56,10 @@ body{
     padding:0 5% 40px 5%;
     margin-bottom: 7%;
     overflow:scroll;
+}
+
+.hidden {
+    display: none;
 }
 
 .package-card{
@@ -131,7 +137,8 @@ body{
     margin-top:30px;
 }
 
-.package-info-details-1{
+.package-info-details-1{ 
+    /* The location information card in the details page */
     text-align:left;
     background:white;
     border-radius: 10px;
@@ -149,7 +156,9 @@ body{
     width: 270px;
     border-radius: 12px;
 }
+
 #site-img1{
+    /* The settings for the defalut image */
     height: 200px;
     width: 270px;
     border-radius: 12px;
@@ -171,6 +180,7 @@ body{
     color:#5E4824;
 }
 
+/* Media query for the package and details page */
 @media only screen and (max-width: 1000px){
     body{
         --zoomSize: 10.5;
@@ -222,10 +232,8 @@ body{
     }
 
     .book-button{
-        border: 0px;
         height: 47px;
         float:right; 
-        border-radius: 5px;
         font-size: 27px;
         width: 200px;
     }
